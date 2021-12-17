@@ -19,7 +19,6 @@ $(() => {
     socket.on('message',(data) => {
         console.log(data)
         let chatElement = $('<p>').append(data.message)
-        console.log(chatElement)
         chatList.prepend(chatElement)
     })
 })
