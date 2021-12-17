@@ -3,5 +3,23 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "socket.io": "^4.4.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "node05",
+  "description": "��#\u0000 \u0000n\u0000o\u0000d\u0000e\u00000\u00005\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MK202019/node05.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MK202019/node05/issues"
+  },
+  "homepage": "https://github.com/MK202019/node05#readme"
 }
