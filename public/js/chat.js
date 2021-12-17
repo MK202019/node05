@@ -1,0 +1,25 @@
+$(() => {
+    const url = ''
+    let socket = io.cnnect(url)
+
+    const message = $('#message')
+    const chatList = $('#chatList')
+
+    $('#send').on('click',()=> {
+        if(!message.val())return
+
+        socket.emit('message',
+        {
+            message: message.val()
+        })
+
+        message.val('')
+    })
+
+    socket.on('message',(data) => {
+        console.log(data)
+        let chatElement = $('<p>').append(data.message)
+        console.log(chatElement)
+        chatList.prepend(chatElement)
+    })
+})
